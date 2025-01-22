@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "HussarBold";
+    src: url("./fonts/HussarBold.otf") format("opentype");
+}
+
+.central {
+    box-shadow: 0 0 100px 50px #942ba1;
+}
