@@ -3,6 +3,12 @@
     src: url("./fonts/HussarBold.otf") format("opentype");
 }
 
-.central {
-    box-shadow: 0 0 100px 50px #942ba1;
+#expanding-frame {
+    transform-origin: center top;
+    will-change: transform, opacity;
+}
+
+/* Style optionnel pour un effet de flou lors du scroll */
+.backdrop-blur-sm {
+    backdrop-filter: blur(8px);
 }

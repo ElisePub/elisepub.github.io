@@ -4,12 +4,14 @@ tailwind.config = {
         colors: {
           'white' : '#efefef',
           'dark' : '#0d1117',
-          'blue' : '#815bff',
+          'blue' : {
+            DEFAULT: '#815bff',
+            700: '#6242cb'
+          },
           'purple' : '#b55bff'
         },
-        fontFamily: {
-          'title' : '',
-          'body' : ["HussarBold", "sans-serif"]
+        backgroundImage: {
+          'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         }
       }
     }
