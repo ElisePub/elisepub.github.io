@@ -13,7 +13,8 @@ https://www.codewars.com/
         <script src="./src/script.js"></script>
     </head>
 
-    <body class="text-center">
+    <body>
+      <div id="top"></div>
       <div class="min-h-screen bg-dark relative overflow-hidden">
         <div id="main">
           <div id="mouse-light" class="pointer-events-none absolute w-96 h-96 -translate-x-1/2 -translate-y-1/2 bg-gradient-radial from-blue-700/20 to-transparent rounded-full blur-xl hidden"></div>
@@ -26,15 +27,15 @@ https://www.codewars.com/
               Discover about my projects and professionals experiences.
             </p>
             <div class="justify-items-center">
-              <img id="arrowd" class="h-14 opacity-80 transition-all duration-500 ease-in-out hover:opacity-100 hover:h-16" src="./src/img/arrow-down.svg">
+              <img id="arrowd" class="h-14 opacity-80 transition-all duration-500 ease-in-out hover:opacity-100 hover:h-16" src="./public/img/arrow-down.svg">
             </div>
           </div>
 
           <!-- Contenu principal : c'est ici qu'il faut mettre le cadre qui contiendra des info-->
           <div class="relative z-0" id="box">
             <div id="expanding-frame" class="mx-auto max-w-3xl transform-gpu transition-all duration-700 ease-in-out opacity-0">
-              <div class="border border-white/10 rounded-xl bg-white/5 backdrop-blur-sm p-8">
-                <h2 class="text-white text-3xl font-semibold mb-4">Mon Parcours Scolaire</h2>
+              <div class="border border-white/10 rounded-xl bg-white/5 backdrop-blur-sm p-8 text-center">
+                <h2 class="text-white text-3xl font-semibold mb-4">Mes projets</h2>
                 <p class="text-white/70">
                   Bientôt le contenu qui sera affiché...
                 </p>
@@ -51,26 +52,28 @@ https://www.codewars.com/
               </div>
             </div>
           </div>
-
         </div>
-        <!-- Zone de navigation -->
-        <div class="relative">
+
+
+        <!-- Footer -->
+        <div class="relative" >
           <!-- Effet de lumière violet au-dessus de la nav -->
           <div class="absolute w-full h-0 bottom-full left-0 shadow-[0_0_100px_50px_#815bff]"></div>
           
           <div class="w-full bg-dark pt-16 relative">
             <div class="max-w-4xl mx-auto text-center">
+              <!-- Zone de navigation -->
               <div class="inline-flex items-center bg-white/5 rounded-full p-1">
                 <div class="inline-flex items-center bg-white/5 rounded-full p-1">
                     <div id="mouse-light" class="pointer-events-none absolute w-96 h-96 -translate-x-1/2 -translate-y-1/2 bg-gradient-radial from-blue/20 to-transparent rounded-full blur-xl hidden"></div>
-                    <button class="px-6 py-2 rounded-full text-sm font-medium transition-colors bg-white/10 text-white">
-                    Studies
+                    <button class="px-6 py-2 rounded-full text-sm font-medium transition-colors bg-white/10 text-white" onclick="window.location.href='./index.html'">
+                    Projects
                     </button>
-                    <button class="px-6 py-2 rounded-full text-sm font-medium transition-colors text-white/70 hover:text-white">
+                    <button class="px-6 py-2 rounded-full text-sm font-medium transition-colors text-white/70 hover:text-white" onclick="window.location.href='./experiences.html'">
                     Experiences
                     </button>
-                    <button class="px-6 py-2 rounded-full text-sm font-medium transition-colors text-white/70 hover:text-white">
-                    Projects
+                    <button class="px-6 py-2 rounded-full text-sm font-medium transition-colors text-white/70 hover:text-white" onclick="window.location.href='./studies.html'">
+                    Studies
                     </button>
                 </div>
               </div>
@@ -81,23 +84,23 @@ https://www.codewars.com/
                 </p>
                 <div class="flex flex-row justify-center gap-8 mt-4">
                   <a href="https://github.com/ElisePub">
-                    <img src="./src/img/github-logo.svg" class="h-10" alt="github">
+                    <img src="./public/img/github-logo.svg" class="h-10" alt="github">
                   </a>
                   <a href="https://www.linkedin.com/in/elise-pubert/">
-                    <img src="./src/img/linkedin-logo.svg" class="h-10" alt="linkedin">
+                    <img src="./public/img/linkedin-logo.svg" class="h-10" alt="linkedin">
                   </a>
                   <a href="mailto:elise.pubert@gmail.com">
-                    <img src="./src/img/gmail-logo.svg" class="h-10" alt="gmail">
+                    <img src="./public/img/gmail-logo.svg" class="h-10" alt="gmail">
                   </a>                  
                 </div>
                 <div class="flex my-4 justify-center items-center gap-1">
                   <p> Elise Pubert - 2025 - </p>
-                  <img src="./src/img/loc.svg" class="h-5 opacity-60" alt="location">
+                  <img src="./public/img/loc.svg" class="h-5 opacity-60" alt="location">
                   <p> Bretagne, France</p>
                 </div>
               </div>
             </div>
           </div>
-      </div>      
+      </div>
     </body>
 </html>
