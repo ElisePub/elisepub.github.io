@@ -60,28 +60,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('mousemove', updateLight);
 
 
-    // Défilé du contenu de la page
-    const frame = document.getElementById('expanding-frame');
-    let isVisible = false;
-
-    function updateFrame() {
-        const scrollPosition = window.scrollY;
-        const triggerPoint = 300; // Point de déclenchage de l'animation
-
-        if (scrollPosition > triggerPoint && !isVisible) {
-        frame.style.transform = 'scale(1)';
-        frame.style.opacity = '1';
-        isVisible = true;
-        } else if (scrollPosition <= triggerPoint && isVisible) {
-        frame.style.opacity = '0';
-        isVisible = false;
-        }
-    }
-    window.addEventListener('scroll', updateFrame);
-    // Appel initial pour définir l'état correct au chargement
-    updateFrame();
-
-
     // Auto-scroll au clic sur la flèche
     const arrow = document.getElementById('arrowd');
 
@@ -108,4 +86,120 @@ document.addEventListener('DOMContentLoaded', () => {
     
         requestAnimationFrame(animation);
     });
+
+    // Défilé fondu du contenu de la page
+    function updateFrame() {
+        const scrollPosition = window.scrollY;
+        const windowHeight = window.innerHeight;
+        const documentHeight = document.documentElement.scrollHeight;
+    
+        const frame = document.getElementById('expanding-frame');
+        // Calculate opacity based on scroll position
+        const opacity = Math.min(1, (scrollPosition / (documentHeight - windowHeight)) * 1.5);
+        frame.style.opacity = opacity;
+    }
+    window.addEventListener('scroll', updateFrame);
+
+
+    // Fond étoilé
+    function createStarryBackground() {
+        console.log('Creating starry background');
+        const starsContainer = document.createElement('div');
+        starsContainer.id = 'starry-background';
+        starsContainer.style.position = 'fixed';
+        starsContainer.style.top = '0';
+        starsContainer.style.left = '0';
+        starsContainer.style.width = '100%';
+        starsContainer.style.height = '100%';
+        starsContainer.style.pointerEvents = 'none';
+        starsContainer.style.zIndex = '20';
+        starsContainer.style.overflow = 'hidden';
+    
+        const starCount = Math.floor(window.innerWidth * window.innerHeight / 5000);
+    
+        for (let i = 0; i < starCount; i++) {
+            const star = document.createElement('div');
+            star.classList.add('star');
+            
+            // Random positioning
+            star.style.position = 'absolute';
+            star.style.left = `${Math.random() * 100}%`;
+            star.style.top = `${Math.random() * 100}%`;
+            
+            // Random size and opacity
+            const size = Math.random() * 2;
+            star.style.width = `${size}px`;
+            star.style.height = `${size}px`;
+            star.style.backgroundColor = 'rgba(255, 255, 255, 0.8)';
+            star.style.borderRadius = '50%';
+            star.style.boxShadow = '0 0 5px rgba(255, 255, 255, 0.5)';
+    
+            starsContainer.appendChild(star);
+        }
+    
+        // Diminution de l'opacité des étoiles au scroll
+        function updateStarOpacity() {
+            const scrollPosition = window.scrollY;
+            const windowHeight = window.innerHeight;
+            const documentHeight = document.documentElement.scrollHeight;
+    
+            const stars = starsContainer.querySelectorAll('.star');
+            stars.forEach((star, index) => {
+                // Calculate opacity based on scroll position
+                const opacity = Math.max(0, 1 - (scrollPosition / (documentHeight - windowHeight)) * 1.5);
+                star.style.opacity = opacity;
+            });
+        }
+
+        // Mouvement des étoiles
+        function addStarParallax() {
+            const starsContainer = document.getElementById('starry-background');
+            const stars = starsContainer.querySelectorAll('.star');
+
+            // positions des étoiles
+            const starPositions = Array.from(stars).map(star => ({
+                el: star,
+                currentX: 0,
+                currentY: 0,
+                targetX: 0,
+                targetY: 0
+            }));
+        
+            function updateStarPositions() {
+                starPositions.forEach(star => {
+                    // Interpolation douce (effet ressort)
+                    star.currentX += (star.targetX - star.currentX) * 0.05;
+                    star.currentY += (star.targetY - star.currentY) * 0.05;
+                    
+                    star.el.style.transform = `translate(${star.currentX}px, ${star.currentY}px)`;
+                });
+        
+                // Continue animation
+                requestAnimationFrame(updateStarPositions);
+            }
+        
+            document.addEventListener('mousemove', (event) => {
+                const { clientX, clientY } = event;
+                const centerX = window.innerWidth / 2;
+                const centerY = window.innerHeight / 2;
+        
+                starPositions.forEach(star => {
+                    const starX = parseFloat(star.el.style.left);
+                    const starY = parseFloat(star.el.style.top);
+                    
+                    star.targetX = (starX + 100) * 0.1 * ((clientX - centerX) / centerX);
+                    star.targetY = (starY + 100) * 0.1 * ((clientY - centerY) / centerY);
+                });
+            });
+        
+            updateStarPositions();
+        }
+    
+        document.body.appendChild(starsContainer);
+        window.addEventListener('scroll', updateStarOpacity);
+
+        addStarParallax();
+    }
+
+    createStarryBackground()
 });
