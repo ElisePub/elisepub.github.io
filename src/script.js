@@ -1,3 +1,4 @@
+// Shared code for the whole site
 document.addEventListener('DOMContentLoaded', () => {
 
     // Halo de lumière qui suit le mouvement de la souris
@@ -41,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
             lightElement.style.left = `${currentX}px`;
             lightElement.style.top = `${currentY}px`;
 
-            // Continuer l'animation si pas encore arrivé
+            // Continuer l'animation si pas encore arrivée
             if (Math.abs(targetX - currentX) > 0.5 || Math.abs(targetY - currentY) > 0.5) {
                 animationFrameId = requestAnimationFrame(animate);
             } else {
@@ -82,8 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (timeElapsed < duration) {
                 requestAnimationFrame(animation);
             }
-        }
-    
+        }    
         requestAnimationFrame(animation);
     });
 
@@ -103,7 +103,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Fond étoilé
     function createStarryBackground() {
-        console.log('Creating starry background');
         const starsContainer = document.createElement('div');
         starsContainer.id = 'starry-background';
         starsContainer.style.position = 'fixed';
@@ -150,6 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 star.style.opacity = opacity;
             });
         }
+        window.addEventListener('scroll', updateStarOpacity);
 
         // Mouvement des étoiles
         function addStarParallax() {
@@ -173,7 +173,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     
                     star.el.style.transform = `translate(${star.currentX}px, ${star.currentY}px)`;
                 });
-        
                 // Continue animation
                 requestAnimationFrame(updateStarPositions);
             }
@@ -191,13 +190,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     star.targetY = (starY + 100) * 0.1 * ((clientY - centerY) / centerY);
                 });
             });
-        
+
             updateStarPositions();
         }
     
         document.body.appendChild(starsContainer);
-        window.addEventListener('scroll', updateStarOpacity);
-
         addStarParallax();
     }
 

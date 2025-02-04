@@ -7,6 +7,7 @@
         <script src="https://cdn.tailwindcss.com"></script>
         <script src="./src/conf/tailwind.js"></script>
         <script src="./src/script.js"></script>
+        <script src="./src/studies.js"></script> 
     </head>
 
     <body>
@@ -20,48 +21,119 @@
               School &<br />Career path 
             </h1>
             <p class="text-white/70 text-xl mb-10">
-              Discover about my projects and professionals experiences.
+              Take a look at my studies...
             </p>
             <div class="justify-items-center">
               <img id="arrowd" class="h-14 opacity-80 transition-all duration-500 ease-in-out hover:opacity-100 hover:h-16" src="./public/img/arrow-down.svg">
             </div>
           </div>
 
-          <!-- Contenu principal : c'est ici qu'il y aura la chronologie de mon parcours-->
-          <div class="text-white">
-            <br/>
-            <p>2017</p>
-            <br/>
-            <p>2017</p>
-            <br/>
-            <p>2017</p>
-            <br/>
-            <p>2017</p>
-            <br/>
-            <p>2017</p>
-            <br/>
-            <p>2017</p>
-            <br/>
-            <p>2017</p>
-            <br/>
-            <p>2017</p>
-            <br/>
-            <p>2017</p>
-            <br/>
-            <p>2017</p>
-            <br/>
-            <p>2017</p>
-            <br/>
-            <p>2017</p>
-            <br/>
-            <p>2017</p>
-            <br/>
-            <p>2017</p>
-            <br/>
-            <p>2017</p>
-          </div>
-        </div>
+          <!-- Contenu principal : Chronologie de mon parcours-->
+          <div class="mb-80 pt-10" id="box">
+            <div class="text-white justify-center mb-20 flex" id="expanding-frame">
+              <div class="justify-items-center">
+                <div class="w-5 h-5 border-2 border-gray-300 rounded-full hover:bg-gray-300 " title="2004"></div>
+                <div class="w-0.5 h-40 bg-gray-300"></div>
 
+                <div id="step">
+                  <img id="logo-img" class="h-12 w-12 rounded-3xl" src="./public/img/brequigny.png">
+                  <div id="info" class="absolute bg-white text-dark p-2 rounded-r-xl mt-4 ml-6 overflow-hidden transition-all duration-500 ease-in-out max-h-24 max-w-lg" style="width: 0; opacity: 0;">
+                    <div id="info-content" class="opacity-0 transition-opacity duration-300 text-justify">
+                      <p>During high school, I chose to do my first year in a Cinema speciality. Audiovisual was one of my hobbies back then. Then I oriented myself to a BAC STI2D so that I could learn my first code lines in C</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-0.5 h-40 bg-gray-300"></div>
+
+                <div class="w-5 h-5 border-2 border-gray-300 rounded-full hover:bg-gray-300 " title="Sep.2020 - Sep.2022"></div>
+                <div class="w-0.5 h-40 bg-gray-300"></div>
+
+                <div id="step">
+                  <img id="logo-img" class="h-12 w-12 rounded-3xl" src="./public/img/iutvannes.jpg">
+                  <div id="info" class="absolute bg-white text-dark p-2 rounded-r-xl mt-4 ml-6 overflow-hidden transition-all duration-500 ease-in-out max-h-28 max-w-lg" style="width: 0; opacity: 0;">
+                    <div id="info-content" class="opacity-0 transition-opacity duration-300 text-justify">
+                      <p>After obtaining my BAC, I wanted to do a school of computer science. I applied to four school and I had been successful in each of my submission. My choice went to the IUT of Vannes, because of his reputation and the ability to do apprenticeships
+                        <a href="https://www.iutvannes.fr/" class="text-blue hover:underline text-sm">learn more about IUT de Vannes.</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-0.5 h-40 bg-gray-300"></div>
+
+                <div id="step">
+                  <img id="logo-img" class="h-12 w-12 rounded-3xl" src="./public/img/solocal.png">
+                  <div id="info" class="absolute bg-white text-dark p-2 rounded-r-xl mt-4 ml-6 overflow-hidden transition-all duration-500 ease-in-out max-h-24" style="width: 0; opacity: 0;">
+                    <div id="info-content" class="opacity-0 transition-opacity duration-300 text-justify">
+                      <p>Apprenticeships is for me the logical continuation of my studies. During two years, I learned to work as an employee in a large corporation. I have gained experience in using new technologies and teamwork.
+                        <a href="https://www.solocal.com/" class="text-blue hover:underline text-sm">learn more about Solocal.</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-0.5 h-40 bg-gray-300"></div>
+
+                <div class="w-5 h-5 border-2 border-gray-300 rounded-full hover:bg-gray-300 " title="Incoming, Sep.2025"></div>
+              </div>
+              <div class="flex flex-col ml-4">
+                <div class="flex justify-between w-80 h-48">
+                    <div>
+                      <p>Birth</p>
+                    </div>
+                    <div>
+                      <p>2004</p>
+                    </div>
+                </div>
+
+                <!-- Images en noir et blanc ? Au clic/survol, étendre une case qui affiche les détails-->
+                <div class="flex justify-between w-80 h-48">
+                  <div>
+                    <p>High School &#8226; Lycée Bréquigny</p>
+                  </div>
+                  <div>
+                    <p>2019</p>
+                  </div>
+                </div>
+
+                <div class="flex justify-between w-80" style="height: 12rem;">
+                  <div>
+                    <p>11th Grade &#8226; BAC STI2D</p>
+                  </div>
+                  <div>
+                    <p>2020</p>
+                  </div>
+                </div>
+
+                <div class="flex justify-between w-80" style="height: 13rem;">
+                  <div>
+                    <p>University &#8226; IUT de Vannes</p>
+                  </div>
+                  <div>
+                    <p>2022</p>
+                  </div>
+                </div>
+
+                <div class="flex justify-between w-80 h-48">
+                  <div>
+                    <p>Apprenticeships &#8226; Solocal (Dev Web)</p>
+                  </div>
+                  <div>
+                    <p>2023</p>
+                  </div>
+                </div>
+
+                <div class="flex justify-between w-80">
+                  <div>
+                    <p>Engineering school</p>
+                  </div>
+                  <div>
+                    <p>September - 2025</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
         
         <!-- Footer -->
         <div class="relative">

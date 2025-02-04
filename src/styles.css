@@ -12,3 +12,13 @@
 .backdrop-blur-sm {
     backdrop-filter: blur(8px);
 }
+
+.info-box {
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: translateY(-10px);
+  }
+  
+.info-box.visible {
+    transform: translateY(0);
+ }
+  
