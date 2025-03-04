@@ -6,7 +6,8 @@ tailwind.config = {
           'dark' : '#0d1117',
           'blue' : {
             DEFAULT: '#815bff',
-            700: '#6242cb'
+            600: '#6242cb',
+            800: '#344661'
           },
           'purple' : '#b55bff'
         },
