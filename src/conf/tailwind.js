@@ -3,7 +3,10 @@ tailwind.config = {
       extend: {
         colors: {
           'white' : '#efefef',
-          'dark' : '#0d1117',
+          'dark' : {
+            DEFAULT: '#0d1117',
+            300: '#24272C'
+          },
           'blue' : {
             DEFAULT: '#815bff',
             600: '#6242cb',

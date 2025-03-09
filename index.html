@@ -10,7 +10,8 @@ https://www.codewars.com/
         <link href="./src/styles.css" rel="stylesheet">
         <script src="https://cdn.tailwindcss.com"></script>
         <script src="./src/conf/tailwind.js"></script>
-        <script src="./src/script.js"></script>
+        <script src="./public/js/script.js"></script>
+        <script src="./public/js/projects.js"></script>
         <title>ElisePub</title>
     </head>
 
@@ -31,26 +32,148 @@ https://www.codewars.com/
             </div>
           </div>
 
-          <!-- Contenu principal : c'est ici qu'il faut mettre le cadre qui contiendra des info-->
-          <div class="relative z-0" id="box">
-            <div id="expanding-frame" class="mx-auto max-w-3xl transform-gpu transition-all duration-700 ease-in-out opacity-0">
-              <div class="border border-white/10 rounded-xl bg-white/5 backdrop-blur-sm p-8 text-center">
-                <h2 class="text-white text-3xl font-semibold mb-4">Projects</h2>
-                <p class="text-white/70">
-                  Bientôt le contenu qui sera affiché...
-                </p>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
+          <!-- Contenu principal-->
+          <div class="relative z-0 pt-60" id="box">
+            <div id="expanding-frame" class="mx-auto transform-gpu transition-all duration-700 ease-in-out opacity-0">
+              <div class="flex flex-row justify-between items-center">
+                <button id="carousel-button" class="prev left-2.5 p-2.5 z-10 text-white cursor-pointer">&#10094;</button>
+                <div id="carousel-container" class="flex justify-around w-4/5 opacity-80">
+
+                  <div id="carousel-item" class="border border-white/20 rounded-xl bg-dark-300 backdrop-blur-sm p-8 text-center min-w-96 flex flex-col w-1/3">
+                    <div class="items-center flex justify-center rounded mb-5 max-w-80 w-full p-4 bg-dark">
+                      <div class="skeleton-left">
+                        <div class="line h-5 w-2/5 mb-2.5 mb-1.5 rounded-sm"></div>
+                        <div class="line h-3 w-10/12 mb-1.5 rounded-sm"></div>
+                        <div class="line h-3 w-1/2 mb-1.5 rounded-sm"></div>
+                        <div class="line h-3 w-9/12 mb-1.5 rounded-sm"></div>
+                        </div>
+                        <div class="skeleton-right">
+                          <div class="square h-20 rounded"></div>
+                        </div>
+                    </div>
+              
+                    <h2 class="text-white text-3xl font-semibold mb-4">Projects</h2>
+                    <p class="text-white/70">
+                      Bientôt le contenu qui sera affiché...
+                    </p>
+                    <p class="text-white/70">
+                      1. RAG IA
+                    </p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                  </div>
+
+                  <div id="carousel-item" class="active border border-white/20 rounded-xl bg-dark-300 backdrop-blur-sm p-8 text-center min-w-96 flex flex-col w-1/3">
+                    <h2 class="text-white text-3xl font-semibold mb-4">FiTrack</h2>
+                    <!-- Mockup code -->
+                    <div class="w-full max-h-72 bg-gray-800 rounded-lg font-mono text-xs overflow-y-scroll mb-10">
+                      <div class="flex items-start px-4 py-2 mt-2">
+                        <span class="text-gray-400 mr-2">$</span>
+                        <code class="text-white">flutter create fitrack</code>
+                      </div>
+                      <div class="flex items-start px-4 py-2">
+                        <span class="text-gray-400 mr-2">></span>
+                        <code class="text-yellow-400">processing...</code>
+                      </div>
+                      <div class="flex items-start px-4 py-2 border-b border-gray-700">
+                        <span class="text-gray-400 mr-2">></span>
+                        <code class="text-green-400">Done!</code>
+                      </div>
+                      <div class="flex items-start px-4 py-2">
+                        <span class="text-gray-400 mr-2">$</span>
+                        <code class="text-white">cat README.md</code>
+                      </div>
+                      <!-- README -->
+                      <div class="flex items-start px-4 py-2">
+                        <code class="text-white text-start flex flex-col gap-4">
+                          <p class="font-black"># FITRACK</p>
+                          <p>Your Ultimate Workout Companion</p>
+                          <p class="font-black">## About</p>
+                          <p>This project is an Android mobile application. </p>
+                          <div>
+                            <p class="font-bold">**status**</p>
+                            <div class="flex items-center">
+                              <p class="text-green-400 text-3xl">&bull;</p>
+                              <p>started</p>
+                            </div>
+                          </div>
+                          <div>
+                            <p class="font-bold">**languages**</p>
+                            <div class="flex items-center gap-1">
+                              <p>&bull; dart </p>
+                              <img src="./public/img/projects/dart.svg" class="w-14">
+                            </div>
+                            <div class="flex items-center gap-1">
+                              <p>&bull; java </p>
+                              <img src="./public/img/projects/java.svg" class="w-14">
+                            </div>
+                          </div>
+                          <div>
+                            <p class="font-bold">**github**</p>
+                            <p>
+                              For more information with Fitrack development, view the [online repository](
+                                <a href="https://github.com/ElisePub/FitTrack" class="hover:underline">https://github.com/ElisePub/FitTrack</a>
+                              ).
+                            </p>
+                          </div>
+                        </code>
+                      </div>
+                    </div>
+                    <!-- project's description -->
+                    <div class="flex gap-1 mb-10">
+                      <div class="text-white/70 text-xs flex flex-col justify-center items-center gap-1" style="border-right: 1px solid #333;">
+                        <div class="bg-dark/70 rounded-sm text-end p-2 w-full">
+                          <p>For the past 3 years, I have been going to the gym on a weekly basis.</p>
+                        </div>
+                        <div class="bg-dark/70 rounded-sm text-start p-2 w-full">
+                          <p>I came up with the idea for this project while recording my workouts on my notepad app. Not very convenient so far.</p>
+                        </div>
+                        <div class="bg-dark/70 rounded-sm text-end p-2 w-full">
+                          <p>This application will meet all the needs of a bodybuilder: tracking, personalized workouts, integrated timer. It will be the number one support for gym members.</p>
+                        </div>
+                      </div>
+                      <div class="h-full text-white/70 text-xs flex flex-col justify-center items-center gap-1">
+                        <div class="bg-dark/70 rounded-sm text-end p-2 w-full h-1/3">
+                          <p>This is my first personal mobile project.</p>
+                        </div>
+                        <div class="bg-dark/70 rounded-sm text-start p-2 w-full h-2/3">
+                          <p>The choice of making an app instead of a web app is clearly driven by the need for easy access for users on their phones.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="carousel-item" class="border border-white/20 rounded-xl bg-dark-300 backdrop-blur-sm p-8 text-center min-w-96 flex flex-col w-1/3">
+                    <div class="items-center flex justify-center rounded mb-5 max-w-80 w-full p-4 bg-dark">
+                      <div class="skeleton-left">
+                        <div class="line h-5 w-2/5 m-2.5 mb-1.5 rounded-sm"></div>
+                        <div class="line h-3 w-10/12 mb-1.5 rounded-sm"></div>
+                        <div class="line h-3 w-1/2 mb-1.5 rounded-sm"></div>
+                        <div class="line h-3 w-10/12 mb-1.5 rounded-sm"></div>
+                        </div>
+                        <div class="skeleton-right">
+                          <div class="square rounded-full h-20 w-20"></div>
+                        </div>
+                    </div>
+
+                    <h2 class="text-white text-3xl font-semibold mb-4">Projects</h2>
+                    <p class="text-white/70">
+                      Bientôt le contenu qui sera affiché...
+                    </p>
+                    <p class="text-white/70">
+                      3. CLUEDO
+                    </p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                  </div>
+                
+                </div>
+                <button id="carousel-button" class="next right-2.5 p-2.5 h-10 z-10 text-white cursor-pointer">&#10095;</button>
               </div>
-            </div>
           </div>
         </div>
 
