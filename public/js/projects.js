@@ -8,9 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const totalItems = carouselItems.length;
     let currentIndex = 1; // On commence par l'élément du milieu (index 1)
     
-    // Largeur du conteneur
-    carouselContainer.style.width = `${totalItems * 100}%`;
-    
     // Largeur de chaque élément
     carouselItems.forEach(item => {
         item.style.width = `${100 / totalItems}%`;
@@ -25,12 +22,12 @@ document.addEventListener('DOMContentLoaded', function() {
             nextButton.disabled = false;
         }
 
-        const containerWidth = carouselContainer.offsetWidth;
-        const itemWidthPx = containerWidth / totalItems;
-        const offset = -(currentIndex * itemWidthPx) + (containerWidth / 2 - itemWidthPx / 2);
         const notMobile = window.innerWidth > 1280;
 
         if (animate && notMobile) {
+            const containerWidth = carouselContainer.offsetWidth;
+            const itemWidthPx = containerWidth / totalItems;
+            const offset = -(currentIndex * itemWidthPx) + (containerWidth / 2 - itemWidthPx / 2);
             carouselContainer.style.transition = 'transform 0.3s ease-in-out';
             carouselContainer.style.transform = `translateX(${offset}px)`;
         } else {
