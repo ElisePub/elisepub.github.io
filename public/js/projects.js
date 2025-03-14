@@ -28,19 +28,22 @@ document.addEventListener('DOMContentLoaded', function() {
         const containerWidth = carouselContainer.offsetWidth;
         const itemWidthPx = containerWidth / totalItems;
         const offset = -(currentIndex * itemWidthPx) + (containerWidth / 2 - itemWidthPx / 2);
-        
-        if (animate) {
+        const notMobile = window.innerWidth > 1280;
+
+        if (animate && notMobile) {
             carouselContainer.style.transition = 'transform 0.3s ease-in-out';
+            carouselContainer.style.transform = `translateX(${offset}px)`;
         } else {
             carouselContainer.style.transition = 'none';
         }
         
-        carouselContainer.style.transform = `translateX(${offset}px)`;
-        
         carouselItems.forEach((item, index) => {
             item.classList.remove('active');
+            item.classList.remove('inactive');
             if (index === currentIndex) {
                 item.classList.add('active');
+            } else {
+                item.classList.add('inactive');
             }
         });
 

@@ -18,18 +18,29 @@
     backdrop-filter: blur(8px);
 }
 
-
 #carousel-item {
     transition: transform 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out;
     transform-origin: center bottom;
 }
 
 #carousel-item.active {
-    transform: scale(1.3);
-    transform-origin: center bottom;
     z-index: 10;
     background-color: rgba(36, 39, 44, 0.8);
     opacity: 100%;
+}
+
+@media screen and (max-width: 80rem ){
+    #carousel-item.inactive {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 80rem ){
+    #carousel-item.active {
+        transform: scale(1.3);
+        transform-origin: center bottom;
+        width: 50%;
+    }
 }
 
 #carousel-button {
