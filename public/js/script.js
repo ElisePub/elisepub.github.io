@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
                 
                 currentX += dx * lerpFactor * scaleFactor; // Appliquer le facteur d'échelle
-                currentY += dy * lerpFactor * scaleFactor; // Appliquer le facteur d'échelle
+                currentY += dy * lerpFactor * scaleFactor;
                 
                 lightElement.classList.remove('hidden');
                 lightElement.style.left = `${currentX}px`;

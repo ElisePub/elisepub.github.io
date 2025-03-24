@@ -33,14 +33,17 @@
     #carousel-item.inactive {
         display: none;
     }
+    #carousel-item.active {
+        width: 80% !important;
+    }
 }
 
 @media screen and (min-width: 80rem ){
     #carousel-item.active {
         transform: scale(1.3);
         transform-origin: center bottom;
-        width: 50%;
-    }
+        width: 40% !important;
+    } 
 }
 
 #carousel-button {
@@ -49,23 +52,17 @@
     border: none;
 }
 
-.square {
+.reflect {
     background: linear-gradient(to right, rgba(130, 130, 130, 0.2) 8%, rgba(130, 130, 130, 0.3) 18%, rgba(130, 130, 130, 0.2) 33%);
     background-size: 800px 100px;
+}
+
+.square {
     animation: wave-squares 2s infinite ease-out;
 }
 
 .line {
-    background: linear-gradient(to right, rgba(130, 130, 130, 0.2) 8%, rgba(130, 130, 130, 0.3) 18%, rgba(130, 130, 130, 0.2) 33%);
-    background-size: 800px 100px;
     animation: wave-lines 2s infinite ease-out;
-}
-
-.skeleton-right{
-   flex:1;
-}
-.skeleton-left{
-   flex:2;
 }
 
 @keyframes wave-lines {
