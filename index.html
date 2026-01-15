@@ -39,127 +39,111 @@ https://www.codewars.com/
               <div class="flex flex-row justify-between items-center xl:px-24">
                 <button id="carousel-button" class="prev xl:left-12 left-0 p-2.5 absolute xl:h-20 xl:w-20 h-14 w-14 rounded-md z-10 text-white text-base cursor-pointer">&#10094;</button>
                 <div id="carousel-container" class="max-xl:justify-center xl:justify-around w-full opacity-85 flex flex-row">
-
-                  <div id="carousel-item" class="items-center inactive border border-white/20 rounded-xl bg-dark-300 backdrop-blur-sm p-8 text-center min-w-96 flex flex-col w-1/3  opacity-50">
-                    <h2 class="text-white text-3xl font-semibold mb-4">RAG IA</h2>
-                    <p class="text-white/70 mb-10">
-                      This project hasn't been displayed on my page yet. However, you can still check out the GitHub repository at <a href="https://github.com/ElisePub/RAG" class="hover:underline">this link</a>.
-                    </p>
-                  </div>
-
-                  <div id="carousel-item" class="active border border-white/20 rounded-xl bg-dark-300 backdrop-blur-sm p-8 text-center min-w-96 flex flex-col w-1/3  opacity-50">
+                  <div id="carousel-item" class="inactive items-center border border-white/20 rounded-xl bg-dark-300 backdrop-blur-sm p-8 text-center min-w-96 flex flex-col gap-6 w-1/3 opacity-50">
                     <h2 class="text-white text-3xl font-semibold mb-4">FiTrack</h2>
-                    <!-- Mockup code -->
-                    <div class="w-full max-h-72 bg-gray-800 rounded-lg font-mono text-xs overflow-y-scroll mb-10">
-                      <div class="flex items-start px-4 py-2 mt-2">
-                        <span class="text-gray-400 mr-2">$</span>
-                        <code class="text-white">flutter create fitrack</code>
-                      </div>
-                      <div class="flex items-start px-4 py-2">
-                        <span class="text-gray-400 mr-2">></span>
-                        <code class="text-yellow-400">processing...</code>
-                      </div>
-                      <div class="flex items-start px-4 py-2 border-b border-gray-700">
-                        <span class="text-gray-400 mr-2">></span>
-                        <code class="text-green-400">Done!</code>
-                      </div>
-                      <div class="flex items-start px-4 py-2">
-                        <span class="text-gray-400 mr-2">$</span>
-                        <code class="text-white">cat README.md</code>
-                      </div>
-                      <!-- README -->
-                      <div class="flex items-start px-4 py-2">
-                        <code class="text-white text-start flex flex-col gap-4">
-                          <p class="font-black"># FITRACK</p>
-                          <p>Your Ultimate Workout Companion</p>
-                          <p class="font-black">## About</p>
-                          <p>This project is an Android mobile application. </p>
-                          <div>
-                            <p class="font-bold">**status**</p>
-                            <div class="flex items-center">
-                              <p class="text-green-400 text-3xl">&bull;</p>
-                              <p>started</p>
-                            </div>
+                    <p class="text-white/70 font-bold">
+                      Your Ultimate Workout Companion
+                    </p>
+                    <p class="text-white/70 text-start">
+                      For the past 3 years, I have been going to the gym on a weekly basis.
+                          I came up with the idea for this project while recording my workouts on my notepad app. Not very convenient so far.
+                          This application will meet all the needs of a bodybuilder: tracking, personalized workouts, integrated timer. It will be the number one support for gym members.
+                          This is my first personal mobile project. The choice of making an app instead of a web app is clearly driven by the need for easy access for users on their phones.
+                    </p>
+                   
+                      <div class="flex flex-col items-center rounded-sm font-mono text-xs text-center gap-3 justify-around w-full text-white mb-15">
+                        <div class="w-full flex gap-10 items-center justify-evenly">
+                          <div class="flex flex-col items-center">
+                            <figure class="bg-[url(./public/img/projects/dart-logo.png)] h-10 w-10 rounded-xl bg-cover"></figure>
+                            <p class="text-xs">DART</p>
                           </div>
-                          <div>
-                            <p class="font-bold">**languages**</p>
-                            <div class="flex items-center gap-1">
-                              <p>&bull; dart </p>
-                              <img src="./public/img/projects/dart.svg" class="w-14">
-                            </div>
-                            <div class="flex items-center gap-1">
-                              <p>&bull; java </p>
-                              <img src="./public/img/projects/java.svg" class="w-14">
-                            </div>
+                          <div class="flex flex-col items-center">
+                            <figure class="bg-[url(./public/img/projects/java-logo.png)] h-10 w-10 rounded-xl bg-cover"></figure>
+                            <p class="text-xs">JAVA</p>
                           </div>
-                          <div>
-                            <p class="font-bold">**github**</p>
-                            <p>
-                              For more information with Fitrack development, view the [online repository](
-                                <a href="https://github.com/ElisePub/FitTrack" class="hover:underline">https://github.com/ElisePub/FitTrack</a>
-                              ).
-                            </p>
+                          <div class="flex flex-col items-center">
+                            <figure class="bg-[url(./public/img/projects/flutter-logo.png)] h-10 w-10 rounded-xl bg-cover"></figure>
+                            <p class="text-xs">FLUTTER</p>
                           </div>
-                        </code>
+                        </div>
+    
+                        <div class="flex flex-row w-full justify-center items-center mb-4">
+                          <div class="w-4 h-4 border border-gray-300 rounded-full hover:bg-gray-300"></div>
+                          <div class="w-1/3 h-0.5 bg-gray-300"></div>
+                          <div class="w-4 h-4 border border-gray-300 rounded-full hover:bg-gray-300"></div>
+                        </div>
+
+                        <a class="w-fit inline-flex items-center bg-white/5 rounded-full text-white/60 hover:text-white" href="https://github.com/ElisePub/FitTrack"> 
+                          <img src="./public/img/github-logo.svg" class="h-10" alt="github">
+                          <p class="w-fit m-2">github repository</p>
+                        </a>
                       </div>
-                    </div>
-                    <!-- project's description -->
-                    <div class="flex gap-1 mb-10">
-                      <div class="text-white/70 text-xs flex flex-col justify-center items-center gap-1" >
-                        <div class="bg-dark/40 rounded-sm text-end p-2 w-full">
-                          <p>For the past 3 years, I have been going to the gym on a weekly basis.</p>
-                        </div>
-                        <div class="bg-dark/40 rounded-sm text-end p-2 w-full">
-                          <p>I came up with the idea for this project while recording my workouts on my notepad app. Not very convenient so far.</p>
-                        </div>
-                        <div class="bg-dark/40 rounded-sm text-end p-2 w-full">
-                          <p>This application will meet all the needs of a bodybuilder: tracking, personalized workouts, integrated timer. It will be the number one support for gym members.</p>
-                        </div>
-                      </div>
-                      <div class="h-full text-white/70 text-xs flex flex-col justify-center items-center gap-1">
-                        <div class="bg-dark/40 rounded-sm text-start p-2 w-full h-1/3">
-                          <p>This is my first personal mobile project.</p>
-                        </div>
-                        <div class="bg-dark/40 rounded-sm text-start p-2 w-full h-2/3">
-                          <p>The choice of making an app instead of a web app is clearly driven by the need for easy access for users on their phones.</p>
-                        </div>
-                      </div>
-                    </div>
                   </div>
 
-                  <div id="carousel-item" class="text-white items-center inactive border border-white/20 rounded-xl bg-dark-300 backdrop-blur-sm p-8 text-center min-w-96 flex flex-col w-1/3 opacity-50 gap-4">
-                    <h2 class="text-3xl font-semibold mb-4">Cluedo</h2>
+                  <div id="carousel-item" class="active items-center border border-white/20 rounded-xl bg-dark-300 backdrop-blur-sm p-8 text-center min-w-96 flex flex-col gap-6 w-1/3 opacity-50">
+                    <h2 class="text-white text-3xl font-semibold mb-4">KoreLab</h2>
+                    <p class="text-white/70 font-bold">
+                      Need to learn a new language ?
+                    </p>
+                    <p class="text-white/70 text-start">
+                      I developed this Android app while learning Korean. Most language-learning apps today are highly sophisticated, but they often lack one thing: a word dictionary. 
+                      In my specific case, I wanted to practice my vocabulary by repeating, repeating, repeating. 
+                      I didn’t know of any mobile app offering this simple feature: the ability to create your own learning dictionary and expand it as you progress. 
+                      Plus, nothing beats a mobile app for this! Now I can practice freely anywhere: at home, on the subway, on the street, basically anywhere.
+                    </p>
+                    <!--<a href="">find the whole project on my page</a>-->
+                   
+                      <div class="flex flex-col items-center rounded-sm font-mono text-xs text-center gap-3 justify-around w-full text-white mb-15">
+                        <div class="w-full flex gap-10 items-center justify-evenly">
+                          <div class="flex flex-col items-center">
+                            <figure class="bg-[url(./public/img/projects/flutter-logo.png)] h-10 w-10 rounded-xl bg-cover"></figure>
+                            <p class="text-xs">FLUTTER</p>
+                          </div>
+                          <div class="flex flex-col items-center">
+                            <figure class="bg-[url(./public/img/projects/java-logo.png)] h-10 w-10 rounded-xl bg-cover"></figure>
+                            <p class="text-xs">JAVA</p>
+                          </div>
+                          <div class="flex flex-col items-center">
+                            <figure class="bg-[url(./public/img/projects/sqlite-logo.png)] h-10 w-10 rounded-xl bg-cover"></figure>
+                            <p class="text-xs">SQLITE</p>
+                          </div>
+                          <div class="flex flex-col items-center">
+                            <figure class="bg-[url(./public/img/projects/dart-logo.png)] h-10 w-10 rounded-xl bg-cover"></figure>
+                            <p class="text-xs">DART</p>
+                          </div>
+                        </div>
+    
+                        <div class="flex flex-row w-full justify-center items-center mb-4">
+                          <div class="w-4 h-4 border border-gray-300 rounded-full hover:bg-gray-300"></div>
+                          <div class="w-1/3 h-0.5 bg-gray-300"></div>
+                          <div class="w-4 h-4 border border-gray-300 rounded-full hover:bg-gray-300"></div>
+                        </div>
 
-                    <div class="items-center flex justify-center rounded w-full gap-4">
-                      <div class="line reflect w-11/12 h-full justify-center rounded-sm font-mono text-xs text-center p-4 flex flex-col gap-4 flex-1">
-                        <p class="text-lg font-mono h-auto w-auto">
-                          Discover the <br><b class="text-purple font-bold">Online Cluedo</b> Game
-                        </p>
-                        <p class="text-xs">
-                          Cluedo is originally a board-based detective game. 
-                          In this online version, we choose to embody one of the professors from the IUT of Vannes. 
-                          Discover who killed Mr. LeSommer by moving through the school's rooms.
-                        </p>
-                      </div>
-                      <div class="w-full h-full content-center  rounded-lg font-mono text-xs text-start p-4 flex-1 max-xl:hidden">
-                        <p>function <b class="text-purple">App()</b> {</p>
-                        <p class="ml-4"><b class="text-yellow-400">return</b> (</p>
-                        <p class="ml-8">&ltGameProvider></p>
-                        <p class="ml-12">&ltRouter></p>
-                        <p class="ml-16">&ltRoutes></p>
-                        <p class="ml-20">&ltRoute path="<b class="text-yellow-400">/</b>" elem={&ltBoard/>}/></p>
-                        <p class="ml-16">&lt/Routes></p>
-                        <p class="ml-12">&lt/Router></p>
-                        <p class="ml-8">&lt/GameProvider></p>
-                        <p class="ml-4">);</p>
-                        <p>}</p>
-                        <p><b class="text-yellow-400">export</b> default <b class="text-purple">App</b>;</p>
+                        <a class="w-fit inline-flex items-center bg-white/5 rounded-full text-white/60 hover:text-white" href="https://github.com/ElisePub/Korelab"> 
+                          <img src="./public/img/github-logo.svg" class="h-10" alt="github">
+                          <p class="w-fit m-2">github repository</p>
+                        </a>
                       </div>
                     </div>
 
-                    <div class="flex mb-14 w-full gap-4 justify-center max-xl:flex-col">
-                      <div class="flex flex-col items-center rounded-sm font-mono text-xs text-center xl:h-full xl:w-1/3 xl:justify-around max-xl:w-full max-xl:gap-4">
-                        <div class="w-full xl:grid xl:grid-cols-2 xl:grid-rows-2 max-xl:flex gap-10 max-xl:items-center max-xl:justify-evenly">
+                    <div id="carousel-item" class="inactive items-center border border-white/20 rounded-xl bg-dark-300 backdrop-blur-sm p-8 text-center min-w-96 flex flex-col gap-6 w-1/3 opacity-50">
+
+                      <h2 class="text-white text-3xl font-semibold mb-4">Cluedo</h2>
+                      <p class="text-white/70 font-bold">
+                        Discover the Online Cluedo Game
+                      </p>
+                      <p class="text-white/70 text-start">
+                        Cluedo is originally a board-based detective game. 
+                            In this online version, discover who killed Mr.LeSommer by moving through the school's rooms.
+                          
+                            My online version of the Cluedo game features a 3D game board.
+                            At the start of each game, a script randomly determines the three elements of the murder: the culprit, the weapon, and the room. 
+                            On each turn, the dice are rolled and the player move space by space from one room to another. Once in a room, he can make a suggestion. 
+                            The game ends when a player discovers the correct combination of elements.
+                      </p>
+                    
+                      <div class="flex flex-col items-center rounded-sm font-mono text-xs text-center gap-3 justify-around w-full text-white mb-15">
+                        <div class="w-full flex gap-10 items-center justify-evenly">
                           <div class="flex flex-col items-center">
                             <figure class="bg-[url(./public/img/projects/docker-logo.png)] h-10 w-10 rounded-xl bg-cover"></figure>
                             <p class="text-xs">DOCKER</p>
@@ -178,106 +162,71 @@ https://www.codewars.com/
                           </div>
                         </div>
     
-                        <div class="flex flex-row w-full justify-center items-center">
+                        <div class="flex flex-row w-full justify-center items-center mb-4">
                           <div class="w-4 h-4 border border-gray-300 rounded-full hover:bg-gray-300"></div>
                           <div class="w-1/3 h-0.5 bg-gray-300"></div>
                           <div class="w-4 h-4 border border-gray-300 rounded-full hover:bg-gray-300"></div>
                         </div>
 
-                        <a class="w-fit inline-flex items-center bg-white/5 rounded-full text-white/60 hover:text-white" href="https://github.com/ElisePub/3D-Online-Cluedo">
+                        <a class="w-fit inline-flex items-center bg-white/5 rounded-full text-white/60 hover:text-white" href="https://github.com/ElisePub/3D-Online-Cluedo"> 
                           <img src="./public/img/github-logo.svg" class="h-10" alt="github">
                           <p class="w-fit m-2">github repository</p>
                         </a>
                       </div>
-
-                      <div class="line reflect h-auto rounded-sm items-center p-4 font-mono flex flex-col gap-4 w-full">
-                        <p class="text-lg text-purple">
-                          What is it ?
-                        </p>
-                        <p class="text-xs">
-                          My online version of the Cluedo game features a 3D game board. 
-                          <br>
-                          At the start of each game, a script randomly determines the three elements of the murder: the culprit, the weapon, and the room. 
-                          On each turn, the dice are rolled and the player move space by space from one room to another. Once in a room, he can make a suggestion. 
-                          The game ends when a player discovers the correct combination of elements.
-                        </p>
-                        <div class="w-full px-2 inline-flex items-center bg-white/5 rounded-md">
-                          <div class="h-auto w-full bg-dark/50 flex justify-evenly my-2 text-white/70 flex-wrap">
-                            <div class="hover:text-white p-2 flex flex-col font-sans">
-                              <p class="text-purple/70 hover:text-purple text-2xl">1</p>
-                              <p class="text-xs">Murderer</p>
-                            </div>
-                            <div class="hover:text-white flex p-2 rounded-full flex-col font-sans">
-                              <p class="text-purple/70 hover:text-purple text-2xl">6</p>
-                              <p class="text-xs ">Suspects</p>
-                            </div>
-                            <div class="hover:text-white flex p-2 rounded-full flex-col font-sans">
-                              <p class="text-purple/70 hover:text-purple text-2xl">9</p>
-                              <p class="text-xs">Rooms</p>
-                            </div>
-                            <div class="hover:text-white p-2 rounded-full flex flex-col font-sans">
-                              <p class="text-purple/70 hover:text-purple text-2xl">8</p>
-                              <p class="text-xs">Weapons</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
                     </div>
                   </div>
-                
-                </div>
                 <button id="carousel-button" class="next xl:right-12 right-0 p-2.5 absolute xl:h-20 xl:w-20 h-14 w-14 rounded-md z-10 text-white text-base cursor-pointer">&#10095;</button>
-              </div>
-          </div>
-        </div>
-
-
-        <!-- Footer -->
-        <div class="relative" >
-          <!-- Effet de lumière violet au-dessus de la nav -->
-          <div class="absolute w-full h-0 bottom-full left-0 shadow-[0_0_100px_50px_#815bff]"></div>
-          
-          <div class="w-full bg-dark pt-16 relative">
-            <div class="max-w-4xl mx-auto text-center">
-              <!-- Zone de navigation -->
-              <div class="inline-flex items-center bg-white/5 rounded-full p-1">
-                <div class="inline-flex items-center bg-white/5 rounded-full p-1">
-                    <div id="mouse-light" class="pointer-events-none absolute w-96 h-96 -translate-x-1/2 -translate-y-1/2 bg-gradient-radial from-blue/20 to-transparent rounded-full blur-xl hidden"></div>
-                    <button class="px-6 py-2 rounded-full text-sm font-medium transition-colors bg-white/10 text-white" onclick="window.location.href='./index.html'">
-                    Projects
-                    </button>
-                    <button class="px-6 py-2 rounded-full text-sm font-medium transition-colors text-white/70 hover:text-white" onclick="window.location.href='./experiences.html'">
-                    Experiences
-                    </button>
-                    <button class="px-6 py-2 rounded-full text-sm font-medium transition-colors text-white/70 hover:text-white" onclick="window.location.href='./studies.html'">
-                    Studies
-                    </button>
-                </div>
-              </div>
-              <!-- Contacts -->
-              <div class="text-white/70 mt-10 text-lg max-w-2xl mx-auto">
-                <p>
-                  Find me on the internet
-                </p>
-                <div class="flex flex-row justify-center gap-8 mt-4">
-                  <a href="https://github.com/ElisePub">
-                    <img src="./public/img/github-logo.svg" class="h-10" alt="github">
-                  </a>
-                  <a href="https://www.linkedin.com/in/elise-pubert/">
-                    <img src="./public/img/linkedin-logo.svg" class="h-10" alt="linkedin">
-                  </a>
-                  <a href="mailto:elise.pubert@gmail.com">
-                    <img src="./public/img/gmail-logo.svg" class="h-10" alt="gmail">
-                  </a>                  
-                </div>
-                <div class="flex my-4 justify-center items-center gap-1">
-                  <p> Elise Pubert - 2025 - </p>
-                  <img src="./public/img/loc.svg" class="h-5 opacity-60" alt="location">
-                  <p> Bretagne, France</p>
-                </div>
               </div>
             </div>
           </div>
-      </div>
+
+
+          <!-- Footer -->
+          <div class="relative" >
+            <!-- Effet de lumière violet au-dessus de la nav -->
+            <div class="absolute w-full h-0 bottom-full left-0 shadow-[0_0_100px_50px_#815bff]"></div>
+            
+            <div class="w-full bg-dark pt-16 relative">
+              <div class="max-w-4xl mx-auto text-center">
+                <!-- Zone de navigation -->
+                <div class="inline-flex items-center bg-white/5 rounded-full p-1">
+                  <div class="inline-flex items-center bg-white/5 rounded-full p-1">
+                      <div id="mouse-light" class="pointer-events-none absolute w-96 h-96 -translate-x-1/2 -translate-y-1/2 bg-gradient-radial from-blue/20 to-transparent rounded-full blur-xl hidden"></div>
+                      <button class="px-6 py-2 w-48 rounded-full transition-colors bg-white/10 text-white" onclick="window.location.href='./index.html'">
+                      Projects
+                      </button>
+                      <button class="px-6 py-2 w-48 rounded-full transition-colors text-white/70 hover:text-white" onclick="window.location.href='./experiences.html'">
+                      Experiences
+                      </button>
+                      <button class="px-6 py-2 w-48 rounded-full transition-colors text-white/70 hover:text-white" onclick="window.location.href='./studies.html'">
+                      Studies
+                      </button>
+                  </div>
+                </div>
+                <!-- Contacts -->
+                <div class="text-white/70 mt-10 text-lg max-w-2xl mx-auto">
+                  <p>
+                    Find me on the internet
+                  </p>
+                  <div class="flex flex-row justify-center gap-8 mt-4">
+                    <a href="https://github.com/ElisePub">
+                      <img src="./public/img/github-logo.svg" class="h-10" alt="github">
+                    </a>
+                    <a href="https://www.linkedin.com/in/elise-pubert/">
+                      <img src="./public/img/linkedin-logo.svg" class="h-10" alt="linkedin">
+                    </a>
+                    <a href="mailto:elise.pubert@gmail.com">
+                      <img src="./public/img/gmail-logo.svg" class="h-10" alt="gmail">
+                    </a>                  
+                  </div>
+                  <div class="flex my-4 justify-center items-center gap-1">
+                    <p> Elise Pubert - 2025 - </p>
+                    <img src="./public/img/loc.svg" class="h-5 opacity-60" alt="location">
+                    <p> Bretagne, France</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
     </body>
 </html>
