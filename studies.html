@@ -1,211 +1,249 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="./public/stylesheets/styles.css" rel="stylesheet">
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script src="./src/conf/tailwind.js"></script>
-        <script src="./public/js/script.js"></script>
-        <script src="./public/js/studies.js"></script> 
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./public/stylesheets/styles.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./src/conf/tailwind.js"></script>
+    <script src="./public/js/script.js"></script>
+    <script src="./public/js/studies.js"></script>
+</head>
 
-    <body>
-      <div id="top"></div>
-      <div class="min-h-screen bg-dark relative overflow-hidden">
-        <div id="main">
-          <div id="mouse-light" class="pointer-events-none absolute w-96 h-96 -translate-x-1/2 -translate-y-1/2 bg-gradient-radial from-blue-700/20 to-transparent rounded-full blur-xl hidden"></div>
-          <!-- Haut de page -->
-          <div class="relative z-10 pt-32 pb-16 text-center h-screen content-center">
+<body>
+<div id="top"></div>
+<div class="min-h-screen bg-dark relative overflow-hidden">
+    <div id="main">
+        <div id="mouse-light"
+             class="pointer-events-none absolute w-96 h-96 -translate-x-1/2 -translate-y-1/2 bg-gradient-radial from-blue-700/20 to-transparent rounded-full blur-xl hidden"></div>
+        <!-- Haut de page -->
+        <div class="relative z-10 pt-32 pb-16 text-center h-screen content-center">
             <h1 class="text-white text-5xl md:text-6xl font-semibold leading-tight mb-6">
-              School &<br />Career path 
+                School &<br/>Career path
             </h1>
             <p class="text-white/70 text-xl mb-10">
-              Take a look at my studies...
+                Take a look at my studies...
             </p>
             <div class="justify-center flex">
-              <img id="arrowd" class="h-14 opacity-80 transition-all duration-500 ease-in-out hover:opacity-100 hover:h-16" src="./public/img/arrow-down.svg">
+                <img id="arrowd"
+                     class="h-14 opacity-80 transition-all duration-500 ease-in-out hover:opacity-100 hover:h-16"
+                     src="./public/img/arrow-down.svg">
             </div>
-          </div>
-
-          <!-- Contenu principal : Chronologie de mon parcours-->
-          <div class="mb-80 pt-20" id="box">
-            <div class="text-white justify-center mb-20 flex" id="expanding-frame">
-              <div class="justify-items-center max-md:ml-4">
-                <div class="w-5 h-5 border-2 border-gray-300 rounded-full hover:bg-gray-300 " title="2004"></div>
-                <div class="w-0.5 h-40 bg-gray-300"></div>
-
-                <div id="step">
-                    <img id="logo-img" class="h-12 w-12 rounded-3xl shadow-[0_0_35px_#815bff]" src="./public/img/studies/brequigny.png">
-                    <div id="info" class="absolute bg-white text-dark p-2 rounded-r-xl mt-4 ml-6 overflow-hidden transition-all duration-500 ease-in-out max-h-24 max-w-lg" style="width: 0; opacity: 0;">
-                      <div id="info-content" class="opacity-0 transition-opacity duration-300 text-justify">
-                        <p>During high school, I chose to do my first year in a Cinema speciality. Audiovisual was one of my hobbies back then. Then I turned towards a BAC STI2D. There, I wrote my first lines of code in C language</p>
-                      </div>
-                    </div>
-                </div>
-                
-                <div class="w-0.5 h-40 bg-gray-300"></div>
-
-                <div class="w-5 h-5 border-2 border-gray-300 rounded-full hover:bg-gray-300 " title="Sep.2020 - Sep.2022"></div>
-                <div class="w-0.5 h-40 bg-gray-300"></div>
-
-                <div id="step">
-                  <img id="logo-img" class="h-12 w-12 rounded-3xl shadow-[0_0_35px_#815bff]" src="./public/img/studies/iutvannes.jpg">
-                  <div id="info" class="absolute bg-white text-dark p-2 rounded-r-xl mt-4 ml-6 overflow-hidden transition-all duration-500 ease-in-out max-h-28 max-w-xl" style="width: 0; opacity: 0;">
-                    <div id="info-content" class="opacity-0 transition-opacity duration-300 text-justify">
-                      <p>After obtaining my BAC, I wanted to do a school of computer science. I applied to four school and I had been successful in each of my submission. My choice went to the IUT of Vannes, because of his reputation and the ability to do apprenticeships
-                        <a href="https://www.iutvannes.fr/" class="text-blue hover:underline text-sm">learn more about IUT de Vannes.</a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="w-0.5 h-40 bg-gray-300"></div>
-
-                <div id="step">
-                  <img id="logo-img" class="h-12 w-12 rounded-3xl shadow-[0_0_35px_#815bff]" src="./public/img/studies/solocal.png">
-                  <div id="info" class="absolute bg-white text-dark p-2 rounded-r-xl mt-4 ml-6 overflow-hidden transition-all duration-500 ease-in-out max-h-24" style="width: 0; opacity: 0;">
-                    <div id="info-content" class="opacity-0 transition-opacity duration-300 text-justify">
-                      <p>Apprenticeships is for me the logical continuation of my studies. During two years, I learned to work as an employee in a large corporation. I gained experience with new technologies and teamwork.
-                        <a href="https://www.solocal.com/" class="text-blue hover:underline text-sm ">learn more about Solocal.</a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="w-0.5 h-40 bg-gray-300"></div>
-
-                <div class="w-5 h-5 border-2 border-gray-300 rounded-full hover:bg-gray-300 " title="Sep.2025 - Sep.2028"></div>
-                <div class="w-0.5 h-40 bg-gray-300"></div>
-
-                <div id="step">
-                  <img id="logo-img" class="h-12 w-12 rounded-3xl shadow-[0_0_35px_#815bff]" src="./public/img/studies/digitaleo.webp">
-                  <div id="info" class="absolute bg-white text-dark p-2 rounded-r-xl mt-4 ml-6 overflow-hidden transition-all duration-500 ease-in-out max-h-24" style="width: 0; opacity: 0;">
-                    <div id="info-content" class="opacity-0 transition-opacity duration-300 text-justify">
-                      <p>Again, I chose to follow a work-study program for the next three years. Until 2028, I'll have the opportunity to work on various subject regarding Digitaleo's platform.
-                        <a href="https://www.digitaleo.com/en" class="text-blue hover:underline text-sm ">learn more about Digitaleo.</a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="w-0.5 h-40 bg-gray-300"></div>
-                <div class="w-5 h-5 border-2 border-gray-300 rounded-full hover:bg-gray-300 " title="Incoming"></div>
-         
-              </div>
-              <div class="flex flex-col ml-4">
-                <div class="flex w-80 h-48 md:justify-between max-md:flex-col max-md:w-full">
-                    <div>
-                      <p>Birth</p>
-                    </div>
-                    <div>
-                      <p>2004</p>
-                    </div>
-                </div>
-
-                <div class="flex w-80 h-48 md:justify-between max-md:flex-col max-md:w-full">
-                  <div>
-                    <p>High School &#8226; Lycée Bréquigny</p>
-                  </div>
-                  <div>
-                    <p>2019</p>
-                  </div>
-                </div>
-
-                <div class="flex justify-between w-80 md:justify-between max-md:flex-col max-md:w-full" style="height: 12rem;">
-                  <div>
-                    <p>11th Grade &#8226; BAC STI2D</p>
-                  </div>
-                  <div>
-                    <p>2020</p>
-                  </div>
-                </div>
-
-                <div class="flex justify-between w-80 md:justify-between max-md:flex-col max-md:w-full" style="height: 13rem;">
-                  <div>
-                    <p>University &#8226; IUT de Vannes</p>
-                  </div>
-                  <div>
-                    <p>2022</p>
-                  </div>
-                </div>
-
-                <div class="flex w-80 h-48 md:justify-between max-md:flex-col max-md:w-full">
-                  <div>
-                    <p>Apprenticeships &#8226; Solocal (FullStack)</p>
-                  </div>
-                  <div>
-                    <p>2023</p>
-                  </div>
-                </div>
-
-                <div class="flex justify-between w-80 md:justify-between max-md:flex-col max-md:w-full" style="height: 12.5rem;">
-                  <div>
-                    <p>Engineering school</p>
-                  </div>
-                  <div>
-                    <p>September - 2025</p>
-                  </div>
-                </div>
-
-                <div class="flex w-80 h-48 md:justify-between max-md:flex-col max-md:w-full">
-                  <div>
-                    <p>Apprenticeships &#8226; Digitaleo (FullStack)</p>
-                  </div>
-                  <div>
-                    <p>2025</p>
-                  </div>
-                </div>
-
-                
-              </div>
-            </div>
-          </div> 
         </div>
-        
-        <!-- Footer -->
-        <div class="relative">
-            <!-- Effet de lumière violet au-dessus de la nav -->
-            <div class="absolute w-full h-0 bottom-full left-0 shadow-[0_0_100px_50px_#815bff]"></div>
-            
-            <div class="w-full bg-dark pt-16 relative">
-              <div class="max-w-4xl mx-auto text-center">
+
+        <!-- Contenu principal : Chronologie de mon parcours-->
+        <div class="mb-80 pt-20" id="box">
+            <div class="text-white justify-center mb-20 flex" id="expanding-frame">
+                <div class="justify-items-center max-md:ml-4">
+                    <div class="w-5 h-5 border-2 border-gray-300 rounded-full hover:bg-gray-300 " title="2004"></div>
+                    <div class="w-0.5 h-40 bg-gray-300"></div>
+
+                    <div id="step">
+                        <img id="logo-img" class="h-12 w-12 rounded-3xl shadow-[0_0_35px_#815bff]"
+                             src="./public/img/studies/brequigny.png">
+                        <div id="info"
+                             class="absolute bg-white text-dark p-2 rounded-r-xl mt-4 ml-6 overflow-hidden transition-all duration-500 ease-in-out max-h-24 max-w-lg"
+                             style="width: 0; opacity: 0;">
+                            <div id="info-content" class="opacity-0 transition-opacity duration-300 text-justify">
+                                <p>During high school, I chose to do my first year in a Cinema speciality. Audiovisual
+                                    was one of my hobbies back then. Then I turned towards a BAC STI2D. There, I wrote
+                                    my first lines of code in C language</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-0.5 h-40 bg-gray-300"></div>
+
+                    <div class="w-5 h-5 border-2 border-gray-300 rounded-full hover:bg-gray-300 "
+                         title="Sep.2020 - Sep.2022"></div>
+                    <div class="w-0.5 h-40 bg-gray-300"></div>
+
+                    <div id="step">
+                        <img id="logo-img" class="h-12 w-12 rounded-3xl shadow-[0_0_35px_#815bff]"
+                             src="./public/img/studies/iutvannes.jpg">
+                        <div id="info"
+                             class="absolute bg-white text-dark p-2 rounded-r-xl mt-4 ml-6 overflow-hidden transition-all duration-500 ease-in-out max-h-28 max-w-xl"
+                             style="width: 0; opacity: 0;">
+                            <div id="info-content" class="opacity-0 transition-opacity duration-300 text-justify">
+                                <p>After obtaining my BAC, I wanted to do a school of computer science. I applied to
+                                    four school and I had been successful in each of my submission. My choice went to
+                                    the IUT of Vannes, because of his reputation and the ability to do apprenticeships
+                                    <a href="https://www.iutvannes.fr/" class="text-blue hover:underline text-sm">learn
+                                        more about IUT de Vannes.</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-0.5 h-40 bg-gray-300"></div>
+
+                    <div id="step">
+                        <img id="logo-img" class="h-12 w-12 rounded-3xl shadow-[0_0_35px_#815bff]"
+                             src="./public/img/studies/solocal.png">
+                        <div id="info"
+                             class="absolute bg-white text-dark p-2 rounded-r-xl mt-4 ml-6 overflow-hidden transition-all duration-500 ease-in-out max-h-24"
+                             style="width: 0; opacity: 0;">
+                            <div id="info-content" class="opacity-0 transition-opacity duration-300 text-justify">
+                                <p>Apprenticeships is for me the logical continuation of my studies. During two years, I
+                                    learned to work as an employee in a large corporation. I gained experience with new
+                                    technologies and teamwork.
+                                    <a href="https://www.solocal.com/" class="text-blue hover:underline text-sm ">learn
+                                        more about Solocal.</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-0.5 h-40 bg-gray-300"></div>
+
+                    <div class="w-5 h-5 border-2 border-gray-300 rounded-full hover:bg-gray-300 "
+                         title="Sep.2025 - Sep.2028"></div>
+                    <div class="w-0.5 h-40 bg-gray-300"></div>
+
+                    <div id="step">
+                        <img id="logo-img" class="h-12 w-12 rounded-3xl shadow-[0_0_35px_#815bff]"
+                             src="./public/img/studies/digitaleo.webp">
+                        <div id="info"
+                             class="absolute bg-white text-dark p-2 rounded-r-xl mt-4 ml-6 overflow-hidden transition-all duration-500 ease-in-out max-h-24"
+                             style="width: 0; opacity: 0;">
+                            <div id="info-content" class="opacity-0 transition-opacity duration-300 text-justify">
+                                <p>Again, I chose to follow a work-study program for the next three years. Until 2028,
+                                    I'll have the opportunity to work on various subject regarding Digitaleo's platform.
+                                    <a href="https://www.digitaleo.com/en" class="text-blue hover:underline text-sm ">learn
+                                        more about Digitaleo.</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-0.5 h-40 bg-gray-300"></div>
+                    <div class="w-5 h-5 border-2 border-gray-300 rounded-full hover:bg-gray-300 "
+                         title="Incoming"></div>
+
+                </div>
+                <div class="flex flex-col ml-4">
+                    <div class="flex w-80 h-48 md:justify-between max-md:flex-col max-md:w-full">
+                        <div>
+                            <p>Birth</p>
+                        </div>
+                        <div>
+                            <p>2004</p>
+                        </div>
+                    </div>
+
+                    <div class="flex w-80 h-48 md:justify-between max-md:flex-col max-md:w-full">
+                        <div>
+                            <p>High School &#8226; Lycée Bréquigny</p>
+                        </div>
+                        <div>
+                            <p>2019</p>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between w-80 md:justify-between max-md:flex-col max-md:w-full"
+                         style="height: 12rem;">
+                        <div>
+                            <p>11th Grade &#8226; BAC STI2D</p>
+                        </div>
+                        <div>
+                            <p>2020</p>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between w-80 md:justify-between max-md:flex-col max-md:w-full"
+                         style="height: 13rem;">
+                        <div>
+                            <p>University &#8226; IUT de Vannes</p>
+                        </div>
+                        <div>
+                            <p>2022</p>
+                        </div>
+                    </div>
+
+                    <div class="flex w-80 h-48 md:justify-between max-md:flex-col max-md:w-full">
+                        <div>
+                            <p>Apprenticeships &#8226; Solocal (FullStack)</p>
+                        </div>
+                        <div>
+                            <p>2023</p>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between w-80 md:justify-between max-md:flex-col max-md:w-full"
+                         style="height: 12.5rem;">
+                        <div>
+                            <p>Engineering school</p>
+                        </div>
+                        <div>
+                            <p>September - 2025</p>
+                        </div>
+                    </div>
+
+                    <div class="flex w-80 h-48 md:justify-between max-md:flex-col max-md:w-full">
+                        <div>
+                            <p>Apprenticeships &#8226; Digitaleo (FullStack)</p>
+                        </div>
+                        <div>
+                            <p>2025</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="relative">
+        <!-- Effet de lumière violet au-dessus de la nav -->
+        <div class="absolute w-full h-0 bottom-full left-0 shadow-[0_0_100px_50px_#815bff]"></div>
+
+        <div class="w-full bg-dark pt-16 relative">
+            <div class="max-w-4xl mx-auto text-center">
                 <!-- Zone de navigation -->
-                <div class="inline-flex items-center bg-white/5 rounded-full p-1">
-                  <div class="inline-flex items-center bg-white/5 rounded-full p-1">
-                      <div id="mouse-light" class="pointer-events-none absolute w-96 h-96 -translate-x-1/2 -translate-y-1/2 bg-gradient-radial from-blue/20 to-transparent rounded-full blur-xl hidden"></div>
-                      <button class="px-6 py-2 w-48 rounded-full text-sm font-medium transition-colors text-white/70 hover:text-white" onclick="window.location.href='./index.html'">
-                      Projects
-                      </button>
-                      <button class="px-6 py-2 w-48 rounded-full text-sm font-medium transition-colors text-white/70 hover:text-white" onclick="window.location.href='./experiences.html'">
-                      Experiences
-                      </button>
-                      <button class="px-6 py-2 w-48 rounded-full text-sm font-medium transition-colors bg-white/10 text-white" onclick="window.location.href='./studies.html'">
-                      Studies
-                      </button>
-                  </div>
+                <div class="px-4 sm:px-0 w-full sm:w-auto">
+                    <div class="inline-flex items-center bg-white/5 rounded-2xl sm:rounded-full p-1 w-full sm:w-auto">
+                        <div class="inline-flex flex-col sm:flex-row items-stretch sm:items-center bg-white/5 rounded-2xl sm:rounded-full p-1 w-full gap-1 sm:gap-0">
+                            <div id="mouse-light"
+                                 class="pointer-events-none absolute w-96 h-96 -translate-x-1/2 -translate-y-1/2 bg-gradient-radial from-blue/20 to-transparent rounded-full blur-xl hidden"></div>
+                            <button class="px-6 py-2 sm:w-48 rounded-xl sm:rounded-full transition-colors text-white/70 hover:text-white text-center"
+                                    onclick="window.location.href='./index.html'">
+                                Projects
+                            </button>
+                            <button class="px-6 py-2 sm:w-48 rounded-xl sm:rounded-full transition-colors text-white/70 hover:text-white text-center"
+                                    onclick="window.location.href='./experiences.html'">
+                                Experiences
+                            </button>
+                            <button class="px-6 py-2 sm:w-48 rounded-xl sm:rounded-full transition-colors bg-white/10 text-white text-center"
+                                    onclick="window.location.href='./studies.html'">
+                                Studies
+                            </button>
+                        </div>
+                    </div>
                 </div>
                 <!-- Contacts -->
                 <div class="text-white/70 mt-10 text-lg max-w-2xl mx-auto">
-                  <p>
-                    Find me on the internet
-                  </p>
-                  <div class="flex flex-row justify-center gap-8 mt-4">
-                    <a href="https://github.com/ElisePub">
-                      <img src="./public/img/github-logo.svg" class="h-10" alt="github">
-                    </a>
-                    <a href="https://www.linkedin.com/in/elise-pubert/">
-                      <img src="./public/img/linkedin-logo.svg" class="h-10" alt="linkedin">
-                    </a>
-                    <a href="mailto:elise.pubert@gmail.com">
-                      <img src="./public/img/gmail-logo.svg" class="h-10" alt="gmail">
-                    </a>                  
-                  </div>
-                  <div class="flex my-4 justify-center items-center gap-1">
-                    <p> Elise Pubert - 2025 - </p>
-                    <img src="./public/img/loc.svg" class="h-5 opacity-60" alt="location">
-                    <p> Bretagne, France</p>
-                  </div>
+                    <p>
+                        Find me on the internet
+                    </p>
+                    <div class="flex flex-row justify-center gap-8 mt-4">
+                        <a href="https://github.com/ElisePub">
+                            <img src="./public/img/github-logo.svg" class="h-10" alt="github">
+                        </a>
+                        <a href="https://www.linkedin.com/in/elise-pubert/">
+                            <img src="./public/img/linkedin-logo.svg" class="h-10" alt="linkedin">
+                        </a>
+                        <a href="mailto:elise.pubert@gmail.com">
+                            <img src="./public/img/gmail-logo.svg" class="h-10" alt="gmail">
+                        </a>
+                    </div>
+                    <div class="flex my-4 justify-center items-center gap-1">
+                        <p> Elise Pubert - 2025 - </p>
+                        <img src="./public/img/loc.svg" class="h-5 opacity-60" alt="location">
+                        <p> Bretagne, France</p>
+                    </div>
                 </div>
-              </div>
             </div>
         </div>
-    </body>
+    </div>
+</div>
+</body>
 </html>
