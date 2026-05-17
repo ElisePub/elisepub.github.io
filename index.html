@@ -1,7 +1,3 @@
-<!--
-https://github.com/
-https://www.codewars.com/
--->
 <!DOCTYPE html>
 <html>
 <head>
@@ -47,33 +43,34 @@ https://www.codewars.com/
                          class="max-xl:justify-center xl:justify-around w-full opacity-85 flex flex-row">
                         <div id="carousel-item"
                              class="inactive items-center border border-white/20 rounded-xl bg-dark-300 backdrop-blur-sm p-8 text-center min-w-96 flex flex-col gap-6 w-1/3 opacity-50">
-                            <h2 class="text-white text-3xl font-semibold mb-4">FiTrack</h2>
+                            <h2 class="text-white text-3xl font-semibold mb-4">Fine-Tuning : Poll Prediction</h2>
                             <p class="text-white/70 font-bold">
-                                Your Ultimate Workout Companion
+                                Predict what your friends think of you
                             </p>
-                            <p class="text-white/70 text-start">
-                                For the past 3 years, I have been going to the gym on a weekly basis.
-                                I came up with the idea for this project while recording my workouts on my notepad app.
-                                Not very convenient so far.
-                                This application will meet all the needs of a bodybuilder: tracking, personalized
-                                workouts, integrated timer. It will be the number one support for gym members.
-                                This is my first personal mobile project. The choice of making an app instead of a web
-                                app is clearly driven by the need for easy access for users on their phones.
-                            </p>
+                            <div class="text-white/70 text-start flex-col flex gap-2">
+                                <p>
+                                    Context : AskUs is an app designed for friend groups. Every day, each member votes for the person they think best matches the question in the daily poll.
+                                </p>
+                                <p>
+                                    After six months of use, I wanted to train a model on the collected votes to predict the winner of the next poll.
+                                    Since this was a personal project, I experimented with several implementations and put together a few graphs to compare the best-performing solutions.
+                                </p>
+                            </div>
+
 
                             <div class="flex flex-col items-center rounded-sm font-mono text-xs text-center gap-3 justify-around w-full text-white mb-15">
                                 <div class="w-full flex gap-10 items-center justify-evenly">
-                                    <div class="flex flex-col items-center">
-                                        <figure class="bg-[url(./public/img/projects/dart-logo.png)] h-10 w-10 rounded-xl bg-cover"></figure>
-                                        <p class="text-xs">DART</p>
+                                    <div class="flex flex-col items-center gap-1">
+                                        <figure class="bg-[url(./public/img/projects/pytorch-logo.png)] h-10 w-10 bg-contain bg-no-repeat bg-center"></figure>
+                                        <p class="text-xs">PyTORCH</p>
                                     </div>
                                     <div class="flex flex-col items-center">
-                                        <figure class="bg-[url(./public/img/projects/java-logo.png)] h-10 w-10 rounded-xl bg-cover"></figure>
-                                        <p class="text-xs">JAVA</p>
+                                        <figure class="bg-[url(./public/img/projects/LLM-logo.png)] h-10 w-10 rounded-xl bg-cover"></figure>
+                                        <p class="text-xs">DISTIL/BERT</p>
                                     </div>
-                                    <div class="flex flex-col items-center">
-                                        <figure class="bg-[url(./public/img/projects/flutter-logo.png)] h-10 w-10 rounded-xl bg-cover"></figure>
-                                        <p class="text-xs">FLUTTER</p>
+                                    <div class="flex flex-col items-center w-fit">
+                                        <figure class="bg-[url(./public/img/projects/meta-logo.png)] h-8 w-10 bg-cover"></figure>
+                                        <p class="text-xs">LLAMA</p>
                                     </div>
                                 </div>
 
@@ -84,7 +81,7 @@ https://www.codewars.com/
                                 </div>
 
                                 <a class="w-fit inline-flex items-center bg-white/5 rounded-full text-white/60 hover:text-white"
-                                   href="https://github.com/ElisePub/FitTrack">
+                                   href="https://github.com/ElisePub/AI-Poll-Classification">
                                     <img src="./public/img/github-logo.svg" class="h-10" alt="github">
                                     <p class="w-fit m-2">github repository</p>
                                 </a>
